@@ -3,7 +3,9 @@
 
 /* global padding, margins etc
 ----------------------------------------------------------------------------- */
+
 // use to apply padding left and right to components
+
 .wrap {
     // add styles
 }
@@ -14,12 +16,14 @@
 // }
 
 // use this to apply padding to and bottom to components
+
 .insulate {
     // add styles
 }
 
 /* clearfix
 ----------------------------------------------------------------------------- */
+
 // style layouts like it's 2010
 .group:after {
     content: '';
@@ -29,6 +33,7 @@
 
 /* inline layout classes
 ----------------------------------------------------------------------------- */
+
 // simple classes, primrily used to change states, eg via ACF selectors in CMS
 .width-full {
     width: 100%;
@@ -65,6 +70,7 @@
 /* buttons and pills
 ----------------------------------------------------------------------------- */
 // global styles that for basic buttons, pills and associated colours
+
 .slab {
     // add styles
 }
@@ -75,6 +81,7 @@
 
 /* inline effects
 ----------------------------------------------------------------------------- */
+
 .shadow {
     //  box-shadow: -2px 4px 10px 0 rgba(0,0,0,0.1);
 }
