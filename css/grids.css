@@ -1,0 +1,71 @@
+/* grids & grid
+----------------------------------------------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  gap: 20px;
+  grid-auto-flow: dense;
+  background-color: var(--off-white);
+  background-color: green;
+}
+.grid.wrap {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .grid.wrap {
+    padding-right: 4.86%;
+    padding-left: 4.86%;
+  }
+}
+
+article {
+  margin-bottom: 2rem;
+  grid-column: span 12;
+}
+@media (min-width: 768px) {
+  article {
+    grid-column: auto/span 6;
+  }
+}
+@media (min-width: 960px) {
+  article {
+    grid-column: auto/span 4;
+    margin-bottom: 2rem;
+  }
+}
+article.wide {
+  grid-column: span 12;
+}
+@media (min-width: 960px) {
+  article.wide {
+    grid-column: span 8;
+    grid-row: span 2;
+  }
+}
+article.tall {
+  grid-column: span 12;
+}
+@media (min-width: 768px) {
+  article.tall {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+}
+@media (min-width: 960px) {
+  article.tall {
+    grid-column: span 4;
+  }
+}
+article.full {
+  grid-column: span 12;
+  grid-row: span 2;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}

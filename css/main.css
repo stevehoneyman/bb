@@ -1,0 +1,290 @@
+/* details
+
+site: Baxter and Bailey
+authors: steve honeyman
+----------------------------------------------------------------------------- */
+:root {
+  /* Variables
+  ---------------------------------------------------------------------------------------------------------------------- */
+  /* Colours
+  ---------------------------------------------------------------------------------------------------------------------- */
+  --black: rgba(0, 0, 0, 1);
+  --white: #fff;
+  --off-white: #f2f2ee;
+  --aqua: #98f9ea;
+  --black-light: rgba(0, 0, 0, 4);
+  /* Fonts
+  ---------------------------------------------------------------------------------------------------------------------- */
+  --font-titling: "classico-urw";
+  --font-copy: "Public Sans", sans-serif;
+  --font-root: 1rem;
+  --font-root-plus: 1.125rem;
+  --font-title: 1.5rem;
+  --font-caption: 1.25rem;
+  --font-section: 1.875rem;
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --weight-black: 900;
+  --lh-base: 1;
+  --lh-small: 1.2;
+  --lh-medium: 1.5;
+  --lh-large: 1;
+  /* Layout
+  ---------------------------------------------------------------------------------------------------------------------- */
+  --site-width: 1440px;
+  --full-width: 100%;
+  --drop-small: 0.625rem;
+  --drop-medium: 3.75rem;
+  --drop-large: 6.25rem;
+  /* Breakpoints
+  ---------------------------------------------------------------------------------------------------------------------- */
+  --break-vs: 320px;
+  --break-small: 480px;
+  --break-small-medium: 600px;
+  --break-medium: 800px;
+  --break-large: 1120px;
+  --break-big: 1240px;
+  --break-vb: 1440px;
+}
+
+/* mixins
+----------------------------------------------------------------------------- */
+/* reset
+----------------------------------------------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+code,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+body {
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+form {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* typography
+----------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: var(--font-titling);
+  font-weight: var(--weight-regular);
+  margin-bottom: var(--drop-small);
+}
+
+p {
+  margin-bottom: var(--drop-small);
+}
+
+/* layout
+----------------------------------------------------------------------------- */
+#site-wrapper {
+  width: 100%;
+  max-width: var(--site-width);
+  padding: 3rem 70px;
+  margin: 1rem auto;
+  background: var(--off-white);
+}
+
+/* grids & grid
+----------------------------------------------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  gap: 20px;
+  grid-auto-flow: dense;
+  background-color: var(--off-white);
+}
+.grid.wrap {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .grid.wrap {
+    padding-right: 4.86%;
+    padding-left: 4.86%;
+  }
+}
+
+article {
+  margin-bottom: 2rem;
+  grid-column: span 12;
+}
+@media (min-width: 768px) {
+  article {
+    grid-column: auto/span 6;
+  }
+}
+@media (min-width: 960px) {
+  article {
+    grid-column: auto/span 4;
+    margin-bottom: 2rem;
+  }
+}
+article.wide {
+  grid-column: span 12;
+}
+@media (min-width: 960px) {
+  article.wide {
+    grid-column: span 8;
+    grid-row: span 2;
+  }
+}
+article.tall {
+  grid-column: span 12;
+}
+@media (min-width: 768px) {
+  article.tall {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+}
+@media (min-width: 960px) {
+  article.tall {
+    grid-column: span 4;
+  }
+}
+article.full {
+  grid-column: span 12;
+  grid-row: span 2;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Work
+----------------------------------------------------------------------------- */
+.work .title {
+  font-size: var(--font-title);
+  font-weight: var(--weight-regular);
+}
+.work .link {
+  color: var(--black);
+}
+
+/* utilities
+----------------------------------------------------------------------------- */
+/* global padding, margins etc
+----------------------------------------------------------------------------- */
+/* clearfix
+----------------------------------------------------------------------------- */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* inline layout classes
+----------------------------------------------------------------------------- */
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.width-quarter {
+  width: 25%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+/* inline colour classses
+----------------------------------------------------------------------------- */
+/* buttons and pills
+----------------------------------------------------------------------------- */
+/* inline effects
+----------------------------------------------------------------------------- */
+/* wordpress specific styles
+----------------------------------------------------------------------------- */
+.alignleft {
+  margin-right: 1rem;
+  float: left;
+}
+
+.alignright {
+  margin-left: 1rem;
+  float: right;
+}
+
+.aligncenter {
+  margin: 0 auto;
+}
+
+/* overrides and fixes
+----------------------------------------------------------------------------- */

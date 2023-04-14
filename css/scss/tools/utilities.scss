@@ -1,0 +1,80 @@
+/* utilities
+----------------------------------------------------------------------------- */
+
+/* global padding, margins etc
+----------------------------------------------------------------------------- */
+// use to apply padding left and right to components
+.wrap {
+    // add styles
+}
+
+// use this to apply margin left and right to components
+// .wrap-margins {
+//   @include wrap-margins;
+// }
+
+// use this to apply padding to and bottom to components
+.insulate {
+    // add styles
+}
+
+/* clearfix
+----------------------------------------------------------------------------- */
+// style layouts like it's 2010
+.group:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* inline layout classes
+----------------------------------------------------------------------------- */
+// simple classes, primrily used to change states, eg via ACF selectors in CMS
+.width-full {
+    width: 100%;
+}
+
+.width-half {
+    width: 50%;
+}
+
+.width-quarter {
+    width: 25%;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* inline colour classses
+----------------------------------------------------------------------------- */
+// simple classes, primrily used to change states, eg via ACF selectors in CMS
+
+/* buttons and pills
+----------------------------------------------------------------------------- */
+// global styles that for basic buttons, pills and associated colours
+.slab {
+    // add styles
+}
+
+.pill {
+    // add styles
+}
+
+/* inline effects
+----------------------------------------------------------------------------- */
+.shadow {
+    //  box-shadow: -2px 4px 10px 0 rgba(0,0,0,0.1);
+}

@@ -1,0 +1,71 @@
+:root {
+    /* Variables
+    ---------------------------------------------------------------------------------------------------------------------- */
+
+    /* Colours
+    ---------------------------------------------------------------------------------------------------------------------- */
+
+    // generic
+    --black: rgba(0, 0, 0, 1);
+    --white: #fff;
+
+    // brand specific
+    --off-white: #f2f2ee;
+    --aqua: #98f9ea;
+
+    // tints
+    --black-light: rgba(0, 0, 0, 4);
+
+    /* Fonts
+    ---------------------------------------------------------------------------------------------------------------------- */
+
+    // typefaces
+    --font-titling: 'classico-urw';
+    --font-copy: 'Public Sans', sans-serif;
+
+    // sizes
+    --font-root: 1rem;
+    --font-root-plus: 1.125rem;
+    --font-title: 1.5rem;
+    --font-caption: 1.25rem;
+    --font-section: 1.875rem;
+
+    // weights
+    --weight-regular: 400;
+    --weight-bold: 700;
+    --weight-black: 900;
+
+    // line-heights
+    --lh-base: 1;
+    --lh-small: 1.2;
+    --lh-medium: 1.5;
+    --lh-large: 1;
+
+    /* Layout
+    ---------------------------------------------------------------------------------------------------------------------- */
+
+    // basic
+    --site-width: 1440px;
+    --full-width: 100%;
+
+    // Padding and margins
+    // Wrap is set as a mixin and deployed using the .wrap utility class
+    // Insulate is set as a mixin and deployed using the .insulate utility class
+    // Wrap-margins is set as a mixin and deployed using the .wrap-margins utility class
+
+    // vertical space between elements or components
+    --drop-small: 0.625rem; // 10px
+    --drop-medium: 3.75rem; // 60px
+    --drop-large: 6.25rem; // 100px
+
+    /* Breakpoints
+    ---------------------------------------------------------------------------------------------------------------------- */
+
+    --break-vs: 320px; // old phone
+    --break-small: 480px; // modern phone
+    --break-small-medium: 600px;
+    --break-medium: 800px; // tablet
+    --break-large: 1120px; // laptop
+    --break-big: 1240px; // desktop
+    --break-vb: 1440px; // biiiig screens!
+}

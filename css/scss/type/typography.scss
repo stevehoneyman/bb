@@ -1,0 +1,13 @@
+/* typography
+----------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+    font-family: var(--font-titling);
+    font-weight: var(--weight-regular);
+    margin-bottom: var(--drop-small);
+}
+
+p {
+    margin-bottom: var(--drop-small);
+}
